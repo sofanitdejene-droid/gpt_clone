@@ -14,7 +14,7 @@ function App() {
  async function fetchConversations() {
    try {
      setIsLoading(true)
-    const {data}= await axios.get("http://localhost:3555/api/chat/conversations");
+    const {data}= await axios.get("https://gpt-clone-szx5.onrender.com/api/chat/conversations");
 
   setConversations(data.data);
   }catch (error) {
@@ -42,7 +42,7 @@ function App() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3555/api/chat/conversations",
+        "https://gpt-clone-szx5.onrender.com/api/chat/conversations",
         { question: question.trim() }
       );
 console.log(data.data)
