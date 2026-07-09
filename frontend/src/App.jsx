@@ -36,7 +36,7 @@ function App() {
       role: 'user'
     };
 
-    setConversations([...conversations, tempQuestion]);
+    setConversations([...conversations, tempQuestions]);
 
 
 
